@@ -1,0 +1,14 @@
+#include <iostream>
+
+int main()
+{
+	char cyfra;
+
+		do {
+			std::cout << "Napisz jakas cyfre \njesli napiszesz 5 to program sie wylaczy\t";                      
+			std::cin >> cyfra;																					//wprowadzanie cyfry
+				std::cout << "\nNapisales cyfre:" << cyfra << "\n";
+		} while (cyfra != '5');																					//zakonczenie programu 
+
+		std::cout << "napisales cyfre 5 takze program zakancza swoje dzialanie";
+}
