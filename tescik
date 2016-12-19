@@ -1,8 +1,0 @@
-#include <iostream>
-
-int main()
-{
-	std::cout << "Olgierd \nto \npajac";
-        return 0;
-}
-
