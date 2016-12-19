@@ -1,0 +1,2 @@
+# pyzia
+nie jestem przeciętny
