@@ -2,7 +2,7 @@
 
 int main()
 {
-	int punkty;
+	unsigned short int punkty;
 
 	std::cout << "Podaj liczbe swoich punktow\n";
 	std::cin >> punkty;
@@ -27,13 +27,12 @@ int main()
 
 			std::cout << "Ledwo zdales, bez wiedzy nic nie osiagniesz" << std::endl; 
 		}
-							if (punkty < 49 && punkty > 1) {													//ocena 1 
+							if (punkty <= 49 ) {													//ocena 1 
 
 			std::cout << "Nie zdales, jak Oli Dziminski XDDD" << std::endl; 
 		}
-								if (punkty < 0 && punkty > 101) {
-
-			std::cout << "Nieprawidlowa liczba punktów" << std::endl;
-		}
+							else {
+								std::cout << "Prosze bez oszustw" << "\n";
+							}
 						
 }
