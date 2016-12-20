@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	unsigned short int napoj;
+	std::cout << "You see a dispenser with cold drinks";
+	std::cout << "1. Coke\n2.Fanta\n3.Sprite\n4.Juice\n5,Water\n";
+	std::cout << "Choose drink ";
+	std::cin >> napoj;
+
+	if (napoj == 1) {
+		std::cout << "You choose Coke" << std::endl;
+	}
+	if (napoj == 2) {
+		std::cout << "You choose Fanta" << std::endl;
+	}
+	if (napoj == 3) {
+		std::cout << "You choose Sprite" << std::endl;
+	}
+	if (napoj == 4) {
+		std::cout << "You choose Juice" << std::endl;
+	}
+	if (napoj == 5) {
+		std::cout << "You choose Water" << std::endl;
+	}
+	if (napoj >= 6) {
+		std::cout << "We haven't got that drink, here's your money" << std::endl;
+	}
+			
+}
