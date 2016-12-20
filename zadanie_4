@@ -1,6 +1,5 @@
 #include <iostream>
-#include <string>
-
+#include <string> //po co zabierasz bibliotekę string a potem z niej nie korzystasz
 int main()
 {
 	unsigned short int napoj;
@@ -27,5 +26,5 @@ int main()
 	if (napoj >= 6) {
 		std::cout << "We haven't got that drink, here's your money" << std::endl;
 	}
-			
+	
 }
