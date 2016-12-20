@@ -7,29 +7,33 @@ int main()
 	std::cout << "Podaj liczbe swoich punktow\n";
 	std::cin >> punkty;
 
-	if (100 > punkty && punkty > 90) {													//ocena 6 
+	if (100 > punkty && punkty > 90) {														//ocena 6 
 
 		std::cout << "Brawo! Dostales 6, oby tak dalej!" << std::endl;
 		}
-		if (punkty < 89 && punkty > 80) {													//ocena 5 
+			if (punkty < 89 && punkty > 80) {													//ocena 5 
 
 		std::cout << "Dobrze! Widac, ze sie postarales" << std::endl; 
 		}
-		if (punkty < 79 && punkty > 70) {													//ocena 4
+				if (punkty < 79 && punkty > 70) {													//ocena 4
 
 			std::cout << "Niezle, ale stac cie na lepiej" << std::endl;
 		}
-		if (punkty < 69 && punkty > 60) {													//ocena 3 
+					if (punkty < 69 && punkty > 60) {													//ocena 3 
 
 			std::cout << "Wymagana wiedza, nic wiecej" << std::endl; 
 		}
-		if (punkty < 59 && punkty > 50) {													//ocena 2
+						if (punkty < 59 && punkty > 50) {													//ocena 2
 
 			std::cout << "Ledwo zdales, bez wiedzy nic nie osiagniesz" << std::endl; 
 		}
-		if (punkty < 49 && punkty > 0) {													//ocena 1 
+							if (punkty < 49 && punkty > 1) {													//ocena 1 
 
 			std::cout << "Nie zdales, jak Oli Dziminski XDDD" << std::endl; 
+		}
+								if (punkty < 0 && punkty > 101) {
+
+			std::cout << "Nieprawidlowa liczba punktów" << std::endl;
 		}
 						
 }
