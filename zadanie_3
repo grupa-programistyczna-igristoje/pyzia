@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+void imie()
+{
+	std::string imie;
+	std::cout << "Podaj swoje imie" << std::endl;
+	std::cin >> imie;
+}
+
+int main()
+{
+	std::cout << "Witaj\t" << imie;
+
+	system("PAUSE");
