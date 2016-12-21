@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+
+void pytanie(std::string pytanie_imie) {					//czy tym sposobem stworzylem sobie funkcje 'pytanie'?
+	std::cout << "Witaj " << pytanie_imie << "\n";
+                                                  //no void nie zwraca wiec nie ma returna
+}
+
+int main() {
+	std::string main_imie;
+	std::cout << "Podaj swoje imie\n";
+	std::cin >> main_imie;
+	
+	pytanie (main_imie);									//wlasnie ta funkcje o 
+
+	return 0;
+}
