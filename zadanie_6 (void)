@@ -2,8 +2,8 @@
 #include <string>
 
 void pytanie(std::string pytanie_imie) {					//czy tym sposobem stworzylem sobie funkcje 'pytanie'?
-	std::cout << "Witaj " << pytanie_imie << "\n";
-                                                  //no void nie zwraca wiec nie ma returna
+	std::cout << "Witaj " << pytanie_imie << "\n";				//(elvis)tak, razem z parametrem pytanie_imie
+                                                  //no void nie zwraca wiec nie ma returna edit:(elvis) oj pięknie aj
 }
 
 int main() {
@@ -12,6 +12,6 @@ int main() {
 	std::cin >> main_imie;
 	
 	pytanie (main_imie);									//wlasnie ta funkcje o 
-
+												//(elvis) ocena 6 proszę bardzo
 	return 0;
 }
