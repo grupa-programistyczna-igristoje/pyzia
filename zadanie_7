@@ -27,6 +27,10 @@ int main(){
 
 	liczba = rand() % 100 + 1;
 	cout << liczba << endl;
+		
+	liczba = rand() % 100 + 1;
+	cout << liczba << endl;			//edit: liczba za malo byla
+
 
 	return 0;
 }
