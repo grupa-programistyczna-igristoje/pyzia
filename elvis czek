@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-std::string plec, imie,
+std::string plec, imie;
 
 int main() 
 {
@@ -11,6 +11,13 @@ int main()
 	std::cin >> imie;
 
 	if (plec == "K")
+	{
 		std::cout << "eldo";
+	}
 	else if (plec == "M")
+	{
 		std::cout << "siemka";
+	}
+std::cin.ignore(2); //lepsze od system pause
+return 0;
+}
