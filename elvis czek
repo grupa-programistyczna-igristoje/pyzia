@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+
+std::string plec, imie,
+
+int main() 
+{
+	std::cout << "Podaj plec?" << std::endl;
+	std::cin >> plec;
+	std::cout << "Jak masz na imie?" << std::endl;
+	std::cin >> imie;
+
+	if (plec == "K")
+		std::cout << "eldo";
+	else if (plec == "M")
+		std::cout << "siemka";
