@@ -1,23 +1,27 @@
+
 #include <iostream>
 #include <string>
 
-std::string plec, imie;
+std::string imie;
 
-int main() 
+int main()
 {
-	std::cout << "Podaj plec?" << std::endl;
-	std::cin >> plec;
 	std::cout << "Jak masz na imie?" << std::endl;
 	std::cin >> imie;
 
-	if (plec == "K")
+	if (imie == "X")
 	{
-		std::cout << "eldo";
+		std::cout << "Gdy na dachu parkuje renifer\nkiedy cieplo mruczy kaloryfer\ngdy choinka zdobi najwazniejszy w domu kat\nja Ci zycze zdrowych i Wesolych Swiat!" << std::endl;
 	}
-	else if (plec == "M")
+	else if (imie == "Y")
 	{
-		std::cout << "siemka";
+		std::cout << "Bardzo duzo prezentow\nmalo w zyciu zakretow\nduzo babelkow w szampanie\nkogos kto zrobi sniadanie\na na kazdym kroku szczescia w Nowym Roku!" << std::endl;
 	}
-std::cin.ignore(2); //lepsze od system pause
-return 0;
+	else if (imie == "Z")
+	{
+		std::cout << "Gdy pierwsza gwiazdka na niebie zablysnie\nniech aniolek Cie mocno ode mnie uscisnie\ni zlozy serdeczne zyczenia z okazji Swiat Bozego Narodzenia!" << std::endl;
+	
+	}
+	std::cin.ignore(2); //lepsze od system pause
+	return 0;
 }
