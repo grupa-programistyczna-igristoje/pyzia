@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstdlib>
+#include <iostream>
+#include <cstdlib>
 
 using namespace std;                        //uzaleznilem sie
 
@@ -32,6 +34,8 @@ if ( liczba != 0 && liczba <= 0)				//a tu w gore
         cout << liczba << endl;
         liczba++;
 } while (liczba != 0);
+
+cout <<"Zapisywanie wynikow na dysku twardym..." << endl;
 
 
 return 0;                             // zwraca coś bo to nie void
