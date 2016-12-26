@@ -19,14 +19,21 @@ else if (liczba < 0 && liczba%2 == 0)
 else if (liczba < 0 && liczba%2 != 0)
 	cout << "Liczba jest ujemna, nie podzielna przez 2" << endl;
 
-if( liczba != 0 )                             //wyswietla liczby po kolei w dół
+if ( liczba != 0 && liczba >= 0 )                             //wyswietla liczby po kolei w dół
     do
     {
-        cout << liczba << std::endl;
+        cout << liczba << endl;
         liczba--;
 } while (liczba != 0);
- 
-return 0;                             // zwraca coś bo to nie void skurwysyn
-}
 
+if ( liczba != 0 && liczba <= 0)
+    do
+    {
+        cout << liczba << endl;
+        liczba++;
+} while (liczba != 0);
+
+
+return 0;                             // zwraca coś bo to nie void
+}
 
