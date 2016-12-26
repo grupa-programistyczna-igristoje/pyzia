@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;                        //uzaleznilem sie
+
+int main()
+{
+int liczba;
+
+cout << "Podaj liczbe do sprawdzenia" << endl;            //podajesz liczbe
+cin >> liczba;
+
+if (liczba >= 0 && liczba%2 == 0)                                       //prostota najlepsza
+	cout << "Liczba jest dodatnia, podzielna przez 2" << endl;
+else if (liczba >= 0 && liczba%2 != 0)
+	cout << "Liczba jest dodatnia, nie podzielna przez 2" << endl;
+else if (liczba < 0 && liczba%2 == 0)
+	cout << "Liczba jest ujemna, podzielna przez 2" << endl;
+else if (liczba < 0 && liczba%2 != 0)
+	cout << "Liczba jest ujemna, nie podzielna przez 2" << endl;
+
+if( liczba != 0 )                             //wyswietla liczby po kolei w dół
+    do
+    {
+        cout << liczba << std::endl;
+        liczba--;
+} while (liczba != 0);
+ 
+return 0;                             // zwraca coś bo to nie void skurwysyn
+}
+
+
