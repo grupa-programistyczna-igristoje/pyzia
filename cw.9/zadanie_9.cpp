@@ -1,26 +1,29 @@
 #include <iostream>
-#include <math.h> //po co ci ta biblioteka skoro nic z niej nie uzywasz
+#include <conio.h>
+#include <windows.h>
 
 using namespace std;
 
 
-int wybor;
+int wybor, a;
 float liczba[8];
 float wynik[4];
 
 int main()
 {
-// tutaj dajesz while i byłoby to intuicyjne gdybyś nie pisał wszystkiego w mainie ehhh
-	cout << " | Kalkulator autorstwa Aleksandra Czecha |" << endl;
-	cout << " |        WYBIERZ RODZAJ DZIALANIA        |" << endl;
-	cout << " |            1 - Dodawanie               |" << endl;
-	cout << " |            2 - Odejmowanie             |" << endl;
-	cout << " |            3 - Mnozenie                |" << endl;
-	cout << " |            4 - Dzielenie               |" << endl;
-	cout << " |             0 - Wyjscie                |" << endl;
-	cin >> wybor;
-
+	a = 1;
+	while (a == 1)					//kurwa while, niby proste, a skomplikowane xddd
+	{
+		cout << " | Kalkulator autorstwa Aleksandra Czecha |" << endl;
+		cout << " |        WYBIERZ RODZAJ DZIALANIA        |" << endl;
+		cout << " |            1 - Dodawanie               |" << endl;
+		cout << " |            2 - Odejmowanie             |" << endl;
+		cout << " |            3 - Mnozenie                |" << endl;
+		cout << " |            4 - Dzielenie               |" << endl;
+		cout << " |             0 - Wyjscie                |" << endl;
+		cin >> wybor;
 		
+
 		if (wybor == 1)
 		{
 			cout << "Podaj pierwsza liczbe" << endl;
@@ -30,6 +33,8 @@ int main()
 
 			wynik[1] = (liczba[1] + liczba[2]);
 			cout << "Suma to " << wynik[1] << endl;
+			_getch();
+			system("cls");
 		}
 
 		if (wybor == 2)
@@ -41,6 +46,8 @@ int main()
 
 			wynik[2] = ((liczba[3]) - (liczba[4]));
 			cout << "Roznica to " << wynik[2] << endl;
+			_getch();
+			system("cls");
 		}
 
 		if (wybor == 3)
@@ -52,6 +59,8 @@ int main()
 
 			wynik[3] = ((liczba[5]) * (liczba[6]));
 			cout << "Iloczyn to " << wynik[3] << endl;
+			_getch();
+			system("cls");
 		}
 
 		if (wybor == 4)
@@ -63,13 +72,14 @@ int main()
 
 			wynik[4] = ((liczba[7]) / (liczba[8]));
 			cout << "Iloraz to " << wynik[4] << endl;
+			_getch();
+			system("cls");
 		}
-		
-		if (wybor == 0)					//na szybkosci cos, byle bylo 
+
+		if (wybor == 0)					
 		{
-		//tutaj zmieniasz wartość zmiennej w while żeby wyrażenie logiczne dawało fałsz
+			a != 1;
 			return 0;
 		}
-		// tutaj koniec while
+	}
 }
-//ej zapisuj pliki z rozszerzeniem .cpp
