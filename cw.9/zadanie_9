@@ -10,6 +10,7 @@ float wynik[4];
 
 int main()
 {
+// tutaj dajesz while i byłoby to intuicyjne gdybyś nie pisał wszystkiego w mainie ehhh
 	cout << " | Kalkulator autorstwa Aleksandra Czecha |" << endl;
 	cout << " |        WYBIERZ RODZAJ DZIALANIA        |" << endl;
 	cout << " |            1 - Dodawanie               |" << endl;
@@ -66,7 +67,9 @@ int main()
 		
 		if (wybor == 0)					//na szybkosci cos, byle bylo 
 		{
+		//tutaj zmieniasz wartość zmiennej w while żeby wyrażenie logiczne dawało fałsz
 			return 0;
 		}
-		
+		// tutaj koniec while
 }
+//ej zapisuj pliki z rozszerzeniem .cpp
