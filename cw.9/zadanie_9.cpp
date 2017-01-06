@@ -84,9 +84,13 @@ void wyjscie()
 		a = 2;
 }
 
+void blad()
+{
+	system("cls");
+}
 
 int main()		        /*daje funkcje blad, która po wpisaniu każdej innej liczby z mozliwych
-	                    wyświetla error i czyści ekran, ale się pierdoli przy literach, nie wiem czemu*/
+	                    wyświetla error i czyści ekran, ale się pierdoli przy literach*/
 {
 	a = 1;
 	while (a == 1)
@@ -107,6 +111,8 @@ int main()		        /*daje funkcje blad, która po wpisaniu każdej innej liczby
 
 		else if (wybor == 0)
 			wyjscie();
+		else
+			blad();
 	}
 
 }
