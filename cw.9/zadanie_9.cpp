@@ -1,6 +1,8 @@
 #include <iostream>
-#include <conio.h>
+#include <conio.h>					/*mógłbym zrobić tak jak elvis, że podajesz najpierw liczby
+							i byłoby mniej zmiennych, ale jakoś mi się podoba tak C: */
 #include <windows.h>
+#include <string>
 
 using namespace std;
 
@@ -9,8 +11,11 @@ int wybor, a;
 float liczba[8];
 float wynik[4];
 
+string pierwsza = "Podaj pierwsza lizcbe";
+string druga = "Podaj druga liczbe";
 
-int menu()
+
+void menu()
 {
 	cout << " | Kalkulator autorstwa Aleksandra Czecha |" << endl;
 	cout << " |        WYBIERZ RODZAJ DZIALANIA        |" << endl;
@@ -20,104 +25,88 @@ int menu()
 	cout << " |            4 - Dzielenie               |" << endl;
 	cout << " |             0 - Wyjscie                |" << endl;
 	cin >> wybor;
-
-	return 0;
 }
 
-int dodawanie()
+void dodawanie()
 {
-	if (wybor == 1)
-	{
-		cout << "Podaj pierwsza liczbe" << endl;
+		cout << pierwsza << endl;
 		cin >> liczba[1];
-		cout << "Podaj druga liczbe" << endl;
+		cout << druga << endl;
 		cin >> liczba[2];
 
 		wynik[1] = (liczba[1] + liczba[2]);
 		cout << "Suma to " << wynik[1] << endl;
 		_getch();
 		system("cls");
-	}
-
-	return 0;
 }
 
-int odejmowanie()
+void odejmowanie()
 {
-	if (wybor == 2)
-	{
-		cout << "Podaj pierwsza liczbe" << endl;
+		cout << pierwsza << endl;
 		cin >> liczba[3];
-		cout << "Podaj druga liczbe" << endl;
+		cout << druga << endl;
 		cin >> liczba[4];
 
 		wynik[2] = ((liczba[3]) - (liczba[4]));
 		cout << "Roznica to " << wynik[2] << endl;
 		_getch();
 		system("cls");
-	}
-
-	return 0;
 }
 
-int mnozenie()
+void mnozenie()
 {
-	if (wybor == 3)
-	{
-		cout << "Podaj pierwsza liczbe" << endl;
+		cout << pierwsza << endl;
 		cin >> liczba[5];
-		cout << "Podaj druga liczbe" << endl;
+		cout << druga << endl;
 		cin >> liczba[6];
 
 		wynik[3] = ((liczba[5]) * (liczba[6]));
 		cout << "Iloczyn to " << wynik[3] << endl;
 		_getch();
 		system("cls");
-	}
-
-	return 0;
 }
 
-int dzielenie()
+void dzielenie()
 {
-	if (wybor == 4)
-	{
-		cout << "Podaj pierwsza liczbe" << endl;
+		cout << pierwsza << endl;
 		cin >> liczba[7];
-		cout << "Podaj druga liczbe" << endl;
+		cout << druga << endl;
 		cin >> liczba[8];
 
 		wynik[4] = ((liczba[7]) / (liczba[8]));
 		cout << "Iloraz to " << wynik[4] << endl;
 		_getch();
 		system("cls");
-	}
-
-	return 0;
 }
 
-int wyjscie()
+void wyjscie()
 {
-	if (wybor == 0)
-	{
 		a = 2;
-		return 0;
-	}
 }
 
-int main()
+
+int main()		        /*daje funkcje blad, która po wpisaniu każdej innej liczby z mozliwych
+	                    wyświetla error i czyści ekran, ale się pierdoli przy literach, nie wiem czemu*/
 {
 	a = 1;
 	while (a == 1)
 	{
 		menu();
 
-		dodawanie();
+		if (wybor == 1)
+			dodawanie();
 
-		odejmowanie();
+		else if (wybor == 2)
+			odejmowanie();
 
-		mnozenie();
+		else if (wybor == 3)
+			mnozenie();
 
-		wyjscie();
+		else if (wybor == 4)
+			dzielenie();
+
+		else if (wybor == 0)
+			wyjscie();
 	}
+
 }
