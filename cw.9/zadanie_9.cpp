@@ -78,7 +78,7 @@ int main()
 
 		if (wybor == 0)					
 		{
-			a != 1;
+			a != 1; //co ty tu odjebales, daj cokolwiek żeby te a nie było równe 1, np. 2, 4, 5, 324421
 			return 0;
 		}
 	}
