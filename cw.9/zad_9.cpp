@@ -60,7 +60,7 @@ int main()
 }
 
 /*
-już chuj, że wszystko w mainie, już chuj, że getchar i nieprzekonwertowany string do obliczeń
+już chuj, że wszystko w mainie, już chuj, że getchar i edit z tym stringiem już nic
 ale kurwa ta nieskończona pętla XDDDDDD
 co ty miałeś w głowie oluś
 */
