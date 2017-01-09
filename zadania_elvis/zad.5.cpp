@@ -3,9 +3,9 @@
 
 using namespace std;
 
-void glosowanie()
+void glosowanie(int wiek) //jak zrobiłeś tak jak na dole, to tutaj dajesz na przykład (zmienna "wiek" w tej funkcji jest całkowicie inna od zmiennej "wiek" w funkcji main)
 {
-	int wiek;
+	//int wiek;
 
 	cout << "Wprowadz swoj wiek: ";
 	cin >> wiek;
@@ -18,6 +18,12 @@ void glosowanie()
 
 int main()
 {
-	glosowanie();
-	getchar();
+	glosowanie();//lepiej by było gdybyś zrobił:
+	/*
+	int wiek;
+	cin >> wiek;
+	glosowanie (wiek)
+	*/
+	getchar();//używasz starej nazwy, normalna nazwa funkcji (w visualu) to _getch()
+		   //brak return
 }
