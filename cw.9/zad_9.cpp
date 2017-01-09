@@ -59,3 +59,8 @@ int main()
 		}
 }
 
+/*
+już chuj, że wszystko w mainie, już chuj, że getchar i nieprzekonwertowany string do obliczeń
+ale kurwa ta nieskończona pętla XDDDDDD
+co ty miałeś w głowie oluś
+*/
