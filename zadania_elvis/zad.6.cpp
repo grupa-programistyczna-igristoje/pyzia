@@ -29,4 +29,5 @@ int main()
 {
 	sprawdzanie();
 	getchar();
+	//brak return
 }
