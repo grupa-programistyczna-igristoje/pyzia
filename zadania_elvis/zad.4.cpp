@@ -10,7 +10,7 @@ void liczenie()
 	cout << "Wprowadz rok: ";
 	cin >> rok;
 
-	if (rok % 4 == 0)
+	if (rok % 4 == 0) //mówiłem, masz na to wzór, bo takie coś może czasami zawodzić
 	{
 		if (rok % 100 == 0)
 		{
@@ -29,5 +29,6 @@ void liczenie()
 int main()
 {
 	liczenie();
-	getchar();
+	getchar();//używasz starej nazwy, normalna nazwa funkcji (w visualu) to _getch()
+		   //brak return
 }
