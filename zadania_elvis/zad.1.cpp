@@ -24,5 +24,6 @@ int main()
 {
 	sprawdzanie();
 
-	getchar();
+	getchar(); //używasz starej nazwy, normalna nazwa funkcji (w visualu) to _getch()
+		   //brak return
 }
