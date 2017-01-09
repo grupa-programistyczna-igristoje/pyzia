@@ -6,12 +6,13 @@
 using namespace std;
 
 float x, y;
-int wybor;
+int wybor, a = 1;
+
 
 
 int main()
 {
-	for (;;)              //nieskonczona petla, dopoki wybor = 0 
+	while (a = 1)
 	{
 		cout << "Wybierz 1 liczbe: ";
 		cin >> x;
@@ -27,11 +28,11 @@ int main()
 		cout << " |             0 - Wyjscie                |" << endl;
 
 		cout << endl;
-		wybor = _getch();                 //nie wywala juz przy znakach
+		wybor = _getch();
 
-		switch (wybor)                    //uzylem case, bo widzialem nie raz u kogos i nie umialem jeszcze 
+		switch (wybor)
 		{
-		case '1':                         
+		case '1':
 			cout << "Wynik to: " << x + y << endl;
 			break;
 
@@ -48,15 +49,17 @@ int main()
 			break;
 
 		case '0':
-			exit(0);
+			a = 2;
 			break;
 
 		default:
 			cout << "Wpisales zly numer" << endl;
 		}
 		_getch();
-		system("cls");              //czysci konsole i mozna podawac nowe liczby 
-		}
+		system("cls");
+		
+	}
+
 }
 
 /*
