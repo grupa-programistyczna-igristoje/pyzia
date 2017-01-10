@@ -69,6 +69,6 @@ int main()
 		_getch();
 		system("cls");
 	}
-	//brak return dla funkcji, która zwraca wartość
+	return 0;  			//mialem byc silniejszy od tego
 }
 
